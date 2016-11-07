@@ -98,6 +98,10 @@ h2 {
     border: 1px solid lightgrey;
 }
 
+.code-data {
+    margin: auto;
+}
+
 .footer {
     background: #919999;
     flex: 0 0 auto;

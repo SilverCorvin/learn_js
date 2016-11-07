@@ -1,5 +1,3 @@
-# Learn JavaScript
-=======
 ## Learn JavaScript. Lesson 6
 
 ### 1. listarray.js
