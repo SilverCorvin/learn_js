@@ -93,13 +93,12 @@ h2 {
 .code-box {
     flex: 1 0 auto;
     background: #FFFFFF;
-    display: flex;
-    flex-flow: column nowrap;
     border: 1px solid lightgrey;
 }
 
 .code-data {
-    margin: auto;
+    display: inline-block;
+    margin: 50px;
 }
 
 .footer {
