@@ -1,48 +1,58 @@
-#mainChessBoard {
-    width: 240px;
-    height: 240px;
+.chessBoard > tr > td {
     border: 1px solid black;
-    margin-left: 30px ;
+    height: 48px;
+    width: 48px;
 }
 
-#chessBoardLetters {
-    width: 240px;
-    height: 30px;
+.chessBoard > tr:nth-child(2n+1) > td:nth-child(2n),
+.chessBoard > tr:nth-child(2n) > td:nth-child(2n+1) {
+    background-image: url(../img/Melamine-wood-004.png);
+}
+
+.chessBoard > tr:nth-child(2n+1) > td:nth-child(2n+1),
+.chessBoard > tr:nth-child(2n) > td:nth-child(2n) {
+    background-image: url(../img/ivory_2.jpg);
+}
+
+.chessBoard > tr:first-child > td:first-child {
+    border-radius: 10px 0px 0px 0px;
+    -moz-border-radius: 10px 0px 0px 0px;
+    -webkit-border-radius: 10px 0px 0px 0px;
+}
+
+.chessBoard > tr:first-child > td:last-child {
+    border-radius: 0px 10px 0px 0px;
+    -moz-border-radius: 0px 10px 0px 0px;
+    -webkit-border-radius: 0px 10px 0px 0px;
+}
+
+.chessBoard > tr:last-child > td:first-child {
+    border-radius: 0px 0px 0px 10px;
+    -moz-border-radius: 0px 0px 0px 10px;
+    -webkit-border-radius: 0px 0px 0px 10px;
+}
+
+.chessBoard > tr:last-child > td:last-child {
+    border-radius: 0px 0px 10px 0px;
+    -moz-border-radius: 0px 0px 10px 0px;
+    -webkit-border-radius: 0px 0px 10px 0px;
+}
+
+.boardLetters > tr > td,
+.boardNums > tr > td {
+    height: 50px;
+    width: 50px;
+}
+
+.chessBoard,
+.boardNums {
+    float: left;
+}
+
+.boardLetters {
     clear: both;
-    margin-left: 30px;
 }
 
-#chessBoardNumbers {
-    float: left;
-    width: 30px;
-    height: 240px;
-}
-
-#chessBoardLetters > div,
-#mainChessBoard > div,
-#chessBoardNumbers > div {
-    width: 30px;
-    height: 30px;
-    float: left;
-    vertical-align: middle;
-    line-height: 30px;
-    font-size: 1.6em;
-}
-
-.first-color {
-    background: #FFFDDF;
-}
-
-.second-color {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0b7a1+0,8c3310+32,8c3310+32,752201+34,752201+34,bf6e4e+100 */
-    background: #f0b7a1;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #f0b7a1 0%, #8c3310 32%, #8c3310 32%, #752201 34%, #752201 34%, #bf6e4e 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #f0b7a1 0%, #8c3310 32%, #8c3310 32%, #752201 34%, #752201 34%, #bf6e4e 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #f0b7a1 0%, #8c3310 32%, #8c3310 32%, #752201 34%, #752201 34%, #bf6e4e 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e', GradientType=0);
-    /* IE6-9 */
+.checked {
+    opacity: 0.6;
 }
