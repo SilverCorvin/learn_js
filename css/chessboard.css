@@ -11,7 +11,7 @@
 
 .chessBoard > tr:nth-child(2n+1) > td:nth-child(2n+1),
 .chessBoard > tr:nth-child(2n) > td:nth-child(2n) {
-    background-image: url(../img/ivory_2.jpg);
+    background-image: url(../img/ivory.png);
 }
 
 .chessBoard > tr:first-child > td:first-child {
