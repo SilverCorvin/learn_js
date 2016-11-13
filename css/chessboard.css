@@ -6,7 +6,7 @@
 
 .chessBoard > tr:nth-child(2n+1) > td:nth-child(2n),
 .chessBoard > tr:nth-child(2n) > td:nth-child(2n+1) {
-    background-image: url(../img/Melamine-wood-004.png);
+    background-image: url(../img/wood.png);
 }
 
 .chessBoard > tr:nth-child(2n+1) > td:nth-child(2n+1),
