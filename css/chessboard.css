@@ -1,5 +1,8 @@
-.chessBoard > tr > td {
+.chessBoard > tr > td,
+.removed-white > tr > td,
+.removed-black > tr > td {
     border: 1px solid black;
+    line-height: 0px;
     height: 48px;
     width: 48px;
 }
@@ -56,3 +59,11 @@
 .checked {
     opacity: 0.6;
 }
+
+/*.removed-white {
+    float: left;
+}
+
+.removed-black {
+    float: right;
+}*/
